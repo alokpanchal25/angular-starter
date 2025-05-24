@@ -1,0 +1,35 @@
+<div class="app">
+  <header>
+    <section>
+      <h1>{{ title }}</h1>
+    </section>
+    <nav>
+      <h2>4 Links with Routes</h2>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/signup">Signup</a></li>
+      </ul>
+      <h3>1 Link with Child Routes</h3>
+      <ul>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h4>Routes Result</h4>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <a href="{{ footerUrl }}">{{ footerLink }}</a>
+  </footer>
+  <!-- <div id="videoWrapper" style="position: relative;"></div> -->
+
+  <canvas width="500" height="280" style="width: 700px; height: 392px;" id="jsmpegCanvas">You browser doesn't support the Canvas Tag. Please use Chrome, Firefox or Safari</canvas>
+
+<button (click)="onClick1('play')">play</button>
+<button (click)="onClick1('pause')">play</button>
+</div>
